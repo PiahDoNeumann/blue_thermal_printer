@@ -23,7 +23,8 @@ import android.util.Log;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.Build;
+import android.os.Build.VERSION;
+import android.os.Build.VERSION_CODES;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -279,7 +280,7 @@ public class BlueThermalPrinterPlugin implements FlutterPlugin, ActivityAware,Me
                     Manifest.permission.ACCESS_FINE_LOCATION,
             };
 
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            if(VERSION.SDK_INT >= VERSION_CODES.S) {
 
                 if (ContextCompat.checkSelfPermission(activity,
                         Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED ||
