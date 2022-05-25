@@ -23,6 +23,7 @@ import android.util.Log;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.Build;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -55,7 +56,6 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
-import android.os.Build;
 
 public class BlueThermalPrinterPlugin implements FlutterPlugin, ActivityAware,MethodCallHandler, RequestPermissionsResultListener {
 
