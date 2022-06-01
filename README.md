@@ -2,10 +2,11 @@ Instalação local
 - Baixe o projeto
 - Coloque em uma pasta fora da raiz do seu projeto Flutter, ex: packages/blue_thermal_printer
 - Fazer a chamada no Flutter, em pubspec.yml:
+<code>
 dependencies:
   blue_thermal_printer:
     path: ../packages/blue_thermal_printer
-
+</code>
 
 
 # blue_thermal_printer
